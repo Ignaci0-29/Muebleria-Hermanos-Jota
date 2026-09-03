@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo | Mueblería Hermanos Jota</title>
+    <meta name="description" content="Catálogo de muebles de diseño de Hermanos Jota para espacios cálidos y contemporáneos.">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor-encabezado">
+            <a class="marca" href="./index.html" aria-label="Hermanos Jota, inicio">
+                <img src="Kit-de-imágenes-HJota/logo.svg" alt="Logo de Hermanos Jota" width="72" height="72">
+                <span>Hermanos Jota</span>
+            </a>
+            <nav aria-label="Navegación principal">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./productos.html" aria-current="page">Catálogo</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="catalogo" aria-labelledby="titulo-catalogo">
+            <div class="contenedor">
+                <p class="eyebrow">Piezas para habitar mejor</p>
+                <h1 id="titulo-catalogo">Catálogo</h1>
+                <p class="seccion-introduccion">Muebles pensados para quedarse: materiales nobles, formas atemporales y el calor de un oficio que se transmite de generación en generación.</p>
+
+                <form class="buscador" role="search">
+                    <label for="buscar-producto">Buscar por nombre o categoría</label>
+                    <input id="buscar-producto" type="search" name="q" placeholder="Ejemplo: sofá, mesas, living" autocomplete="off">
+                    <p id="resultado-busqueda" aria-live="polite"></p>
+                </form>
+
+                <p id="estado-carga" class="estado-carga">Cargando productos...</p>
+                <div class="productos-lista" id="lista-productos" aria-live="polite" hidden></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor pie-contenido">
+            <div>
+                <p class="pie-marca">Hermanos Jota</p>
+                <p>Muebles con historia para una vida más cálida.</p>
+            </div>
+            <div>
+                <p>Casa Taller · Av. San Juan 2847</p>
+                <p>Buenos Aires, Argentina</p>
+            </div>
+            <p>&copy; 2026 Hermanos Jota. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="productos-data.js"></script>
+    <script src="catalogo.js"></script>
+</body>
+</html>
