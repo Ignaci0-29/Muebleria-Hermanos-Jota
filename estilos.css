@@ -674,3 +674,24 @@ main > article button:hover,
         transition-duration: 0.01ms !important;
     }
 }
+/* ---- Contacto (validacion) ---- */
+.formulario-contacto p[role="alert"] {
+    margin: 0.25rem 0 1rem;
+    color: #b3261e;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+#mensaje-exito {
+    margin: 1.5rem 0 0;
+    padding: 1rem 1.25rem;
+    border-left: 4px solid var(--salvia);
+    background: rgba(135, 169, 107, 0.12);
+    color: var(--tinta);
+    font-weight: 700;
+}
+
+#boton-enviar[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
