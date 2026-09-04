@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Mueblería Hermanos Jota</title>
+    <meta name="description" content="Contactate con Hermanos Jota para consultas, presupuestos a medida y visitas al showroom.">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor-encabezado">
+            <a class="marca" href="./index.html" aria-label="Hermanos Jota, inicio">
+                <img src="Kit-de-imágenes-HJota/logo.svg" alt="Logo de Hermanos Jota" width="72" height="72">
+                <span>Hermanos Jota</span>
+            </a>
+            <nav aria-label="Navegación principal">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./productos.html">Catálogo</a></li>
+                    <li><a href="./contacto.html" aria-current="page">Contacto</a></li>
+                    <li><a href="./producto.html" aria-label="Ver carrito">Carrito (<span id="contador-carrito">0</span>)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form id="formulario-contacto" class="formulario-contacto" novalidate>
+            <h1>Contacto</h1>
+            <p>¿Tenés dudas sobre una pieza o querés pedir un presupuesto a medida? Escribinos y te respondemos a la brevedad.</p>
+
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+            <p id="error-nombre" role="alert"></p>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+            <p id="error-email" role="alert"></p>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <p id="error-mensaje" role="alert"></p>
+
+            <button type="submit" id="boton-enviar">Enviar mensaje</button>
+
+            <p id="mensaje-exito" role="status" aria-live="polite" hidden></p>
+
+            <p>
+                <strong>Showroom:</strong> Av. San Juan 2847, San Cristóbal, CABA ·
+                Lun a Vie 10:00–19:00, Sáb 10:00–14:00 · WhatsApp +54 11 4567-8900
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <div class="contenedor pie-contenido">
+            <div>
+                <p class="pie-marca">Hermanos Jota</p>
+                <p>Muebles con historia para una vida más cálida.</p>
+            </div>
+            <div>
+                <p>Casa Taller · Av. San Juan 2847</p>
+                <p>Buenos Aires, Argentina</p>
+            </div>
+            <p>&copy; 2026 Hermanos Jota. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="carrito.js" defer></script>
+    <script src="contacto.js" defer></script>
+</body>
+</html>
