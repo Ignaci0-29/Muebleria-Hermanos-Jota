@@ -6,7 +6,6 @@
     <title>Mueblería Hermanos Jota</title>
     <meta name="description" content="Mueblería Hermanos Jota - muebles de diseño para espacios cálidos y contemporáneos.">
     <link rel="stylesheet" href="estilos.css">
-    <script src="scripts.js"></script>
 </head>
 <body>
     <!-- Encabezado de la página: logo y navegador -->
@@ -47,55 +46,7 @@
                 <h2 id="titulo-destacados">Piezas destacadas</h2>
                 <p class="seccion-introduccion">Objetos honestos, materiales nobles y detalles pensados para quedarse.</p>
 
-                <div class="productos-destacados">
-                    <article class="producto-card">
-                        <a href="./producto.html#sofa-patagonia" class="producto-imagen">
-                            <img src="Kit-de-imágenes-HJota/Sofá Patagonia.png" alt="Sofá Patagonia de Hermanos Jota" loading="lazy">
-                        </a>
-                        <div class="producto-contenido">
-                            <p class="producto-categoria">Living</p>
-                            <h3><a href="./producto.html#sofa-patagonia">Sofá Patagonia</a></h3>
-                            <p>Calidez y comodidad para compartir todos los días.</p>
-                            <a class="producto-enlace" href="./producto.html#sofa-patagonia">Ver pieza</a>
-                        </div>
-                    </article>
-
-                    <article class="producto-card">
-                        <a href="./producto.html#mesa-de-centro-araucaria" class="producto-imagen">
-                            <img src="Kit-de-imágenes-HJota/Mesa de Centro Araucaria.png" alt="Mesa de Centro Araucaria de Hermanos Jota" loading="lazy">
-                        </a>
-                        <div class="producto-contenido">
-                            <p class="producto-categoria">Mesas</p>
-                            <h3><a href="./producto.html#mesa-de-centro-araucaria">Mesa de Centro Araucaria</a></h3>
-                            <p>Una presencia serena para el centro de tu encuentro.</p>
-                            <a class="producto-enlace" href="./producto.html#mesa-de-centro-araucaria">Ver pieza</a>
-                        </div>
-                    </article>
-
-                    <article class="producto-card">
-                        <a href="./producto.html#butaca-mendoza" class="producto-imagen">
-                            <img src="Kit-de-imágenes-HJota/Butaca Mendoza.png" alt="Butaca Mendoza de Hermanos Jota" loading="lazy">
-                        </a>
-                        <div class="producto-contenido">
-                            <p class="producto-categoria">Asientos</p>
-                            <h3><a href="./producto.html#butaca-mendoza">Butaca Mendoza</a></h3>
-                            <p>Una pausa cómoda con carácter artesanal.</p>
-                            <a class="producto-enlace" href="./producto.html#butaca-mendoza">Ver pieza</a>
-                        </div>
-                    </article>
-
-                    <article class="producto-card">
-                        <a href="./producto.html#aparador-uspallata" class="producto-imagen">
-                            <img src="Kit-de-imágenes-HJota/Aparador Uspallata.png" alt="Aparador Uspallata de Hermanos Jota" loading="lazy">
-                        </a>
-                        <div class="producto-contenido">
-                            <p class="producto-categoria">Guardado</p>
-                            <h3><a href="./producto.html#aparador-uspallata">Aparador Uspallata</a></h3>
-                            <p>Orden, materia y belleza para acompañar tu espacio.</p>
-                            <a class="producto-enlace" href="./producto.html#aparador-uspallata">Ver pieza</a>
-                        </div>
-                    </article>
-                </div>
+                <div class="productos-destacados" id="productos-destacados"></div>
 
                 <a class="enlace-catalogo" href="./productos.html">Ver todo el catálogo</a>
             </div>
@@ -115,5 +66,7 @@
             <p>&copy; 2026 Hermanos Jota. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="productos-data.js"></script>
+    <script src="inicio.js"></script>
 </body>
 </html>
