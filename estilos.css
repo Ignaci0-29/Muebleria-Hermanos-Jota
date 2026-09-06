@@ -525,6 +525,104 @@ main > article button:hover,
     background: var(--tinta);
 }
 
+.carrito-indicador {
+    color: var(--oro);
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.detalle-producto {
+    width: min(1120px, calc(100% - 2rem));
+    margin: 0 auto 3rem;
+    padding: 3rem 0;
+    background: transparent;
+}
+
+.volver-catalogo {
+    display: inline-block;
+    margin-bottom: 2rem;
+    color: var(--siena);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.volver-catalogo:hover {
+    color: var(--rosa);
+}
+
+.detalle-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
+    gap: clamp(2rem, 6vw, 5rem);
+    align-items: center;
+}
+
+.detalle-imagen-contenedor {
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: var(--blanco);
+    box-shadow: var(--sombra);
+}
+
+.detalle-imagen-contenedor img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.detalle-informacion h1 {
+    margin-bottom: 1rem;
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    line-height: 1.1;
+}
+
+.detalle-informacion .descripcion {
+    margin-bottom: 1.5rem;
+}
+
+.detalle-precio {
+    margin-bottom: 1.5rem;
+    color: var(--siena);
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+.mensaje-carrito {
+    min-height: 1.6em;
+    margin-top: 0.75rem;
+    color: var(--salvia);
+    font-weight: 700;
+}
+
+.detalle-caracteristicas {
+    margin-top: 4rem;
+}
+
+.detalle-caracteristicas h2 {
+    margin-bottom: 1rem;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+}
+
+.producto-no-encontrado {
+    width: min(720px, calc(100% - 2rem));
+    margin: 4rem auto 6rem;
+    padding: clamp(2rem, 6vw, 4rem);
+    border-top: 6px solid var(--siena);
+    background: var(--blanco);
+    box-shadow: var(--sombra);
+}
+
+.producto-no-encontrado h1 {
+    margin-bottom: 0.75rem;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.producto-no-encontrado .boton {
+    margin-top: 1.25rem;
+}
+
 /* ===== PARTICULAR DE contacto.html ===== */
 
 .formulario-contacto {
@@ -644,6 +742,20 @@ main > article button:hover,
         width: 100%;
         margin-bottom: 1rem;
         padding: 2rem 1rem;
+    }
+
+    .detalle-producto {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+
+    .detalle-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .detalle-caracteristicas {
+        margin-top: 3rem;
     }
 
     main > article table {

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle | Mueblería Hermanos Jota</title>
+    <meta name="description" content="Conocé los detalles de una pieza de Hermanos Jota.">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor-encabezado">
+            <a class="marca" href="./index.html" aria-label="Hermanos Jota, inicio">
+                <img src="Kit-de-imágenes-HJota/logo.svg" alt="Logo de Hermanos Jota" width="72" height="72">
+                <span>Hermanos Jota</span>
+            </a>
+            <nav aria-label="Navegación principal">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./productos.html" aria-current="page">Catálogo</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><span class="carrito-indicador" aria-label="Productos en el carrito">Carrito (<span id="contador-carrito">0</span>)</span></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article id="detalle-producto" class="detalle-producto" hidden>
+            <a class="volver-catalogo" href="./productos.html">&larr; Volver al catálogo</a>
+            <div class="detalle-grid">
+                <div class="detalle-imagen-contenedor">
+                    <img id="producto-imagen" src="" alt="">
+                </div>
+                <div class="detalle-informacion">
+                    <p id="producto-categoria" class="producto-categoria"></p>
+                    <h1 id="producto-nombre"></h1>
+                    <p id="producto-descripcion" class="descripcion"></p>
+                    <p id="producto-precio" class="detalle-precio"></p>
+                    <button id="boton-carrito" type="button">Añadir al carrito</button>
+                    <p id="mensaje-carrito" class="mensaje-carrito" role="status" aria-live="polite"></p>
+                </div>
+            </div>
+
+            <section class="detalle-caracteristicas" aria-labelledby="titulo-caracteristicas">
+                <p class="eyebrow">Hecho para quedarse</p>
+                <h2 id="titulo-caracteristicas">Detalles de fabricación</h2>
+                <table>
+                    <tbody id="tabla-caracteristicas"></tbody>
+                </table>
+            </section>
+        </article>
+
+        <article id="producto-no-encontrado" class="producto-no-encontrado">
+            <p class="eyebrow">Pieza no disponible</p>
+            <h1>No encontramos ese producto</h1>
+            <p class="descripcion">El enlace puede estar incompleto o la pieza ya no formar parte del catálogo.</p>
+            <a class="boton boton-principal" href="./productos.html">Ver catálogo</a>
+        </article>
+    </main>
+
+    <footer>
+        <div class="contenedor pie-contenido">
+            <div>
+                <p class="pie-marca">Hermanos Jota</p>
+                <p>Muebles con historia para una vida más cálida.</p>
+            </div>
+            <div>
+                <p>Casa Taller · Av. San Juan 2847</p>
+                <p>Buenos Aires, Argentina</p>
+            </div>
+            <p>&copy; 2026 Hermanos Jota. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="productos-data.js"></script>
+    <script src="producto.js"></script>
+</body>
+</html>
