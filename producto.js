@@ -7,7 +7,9 @@ function formatearPrecio(precio) {
 function obtenerCarrito() {
     try {
         const carrito = JSON.parse(localStorage.getItem(CLAVE_CARRITO));
-        return Array.isArray(carrito) ? carrito : [];
+        return Array.isArray(carrito)
+            ? carrito.filter((idProducto) => PRODUCTOS.some((producto) => producto.id === idProducto))
+            : [];
     } catch {
         return [];
     }
@@ -55,6 +57,7 @@ function mostrarProducto(producto) {
         const carrito = obtenerCarrito();
         carrito.push(producto.id);
         localStorage.setItem(CLAVE_CARRITO, JSON.stringify(carrito));
+        window.dispatchEvent(new Event("carritoactualizado"));
         actualizarContadorCarrito();
         document.getElementById("mensaje-carrito").textContent = "La pieza se añadió al carrito.";
     });

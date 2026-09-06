@@ -20,6 +20,7 @@
                     <li><a href="./index.html" aria-current="page">Inicio</a></li>
                     <li><a href="./productos.html">Catálogo</a></li>
                     <li><a href="./contacto.html">Contacto</a></li>
+                    <li><button class="carrito-indicador" id="abrir-carrito" type="button" aria-controls="panel-carrito">Carrito (<span id="contador-carrito">0</span>)</button></li>
                 </ul>
             </nav>
         </div>
@@ -66,7 +67,20 @@
             <p>&copy; 2026 Hermanos Jota. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <div class="fondo-carrito" id="fondo-carrito"></div>
+    <aside class="panel-carrito" id="panel-carrito" aria-labelledby="titulo-carrito" aria-hidden="true">
+        <div class="panel-carrito-encabezado">
+            <div>
+                <p class="eyebrow">Tu selección</p>
+                <h2 id="titulo-carrito">Carrito</h2>
+            </div>
+            <button class="cerrar-carrito" id="cerrar-carrito" type="button" aria-label="Cerrar carrito">&times;</button>
+        </div>
+        <p class="carrito-vacio" id="carrito-vacio">Su carrito está vacío.</p>
+        <div class="lista-carrito" id="lista-carrito"></div>
+    </aside>
     <script src="productos-data.js"></script>
+    <script src="carrito.js"></script>
     <script src="inicio.js"></script>
 </body>
 </html>
