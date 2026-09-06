@@ -1,74 +1,62 @@
 # Mueblería Hermanos Jota
 
-Sitio web de la Mueblería Hermanos Jota, una marca de muebles de diseño que combina materiales nobles, calidez y funcionalidad para crear espacios que se disfrutan todos los días.
-
-El proyecto propone una experiencia de compra simple y clara: descubrir la colección desde la página de inicio, explorar el catálogo, consultar el detalle de cada pieza y ponerse en contacto con la mueblería para realizar una consulta o solicitar un presupuesto.
+Sitio web frontend para Hermanos Jota, una mueblería de diseño inspirada en la calidez de los materiales nobles, la artesanía y el diseño atemporal.
 
 ## Funcionalidades
 
 - Página de inicio con presentación de la marca y productos destacados.
-- Catálogo completo organizado por categorías.
-- Búsqueda de productos por nombre o categoría.
-- Fichas individuales con imágenes, descripción, precio, medidas, materiales y características.
-- Carrito de compra con contador de productos y persistencia en el navegador.
-- Formulario de contacto con validación de nombre, email y mensaje.
-- Diseño responsive para computadoras, tablets y celulares.
-- Navegación accesible con textos alternativos, etiquetas semánticas y mensajes dinámicos.
+- Catálogo dinámico organizado por categorías.
+- Búsqueda por nombre o categoría.
+- Detalle de cada producto con imagen, descripción, precio y características.
+- Carrito lateral con persistencia en `localStorage`.
+- Contador de productos en el carrito.
+- Acciones para quitar una unidad o eliminar un producto completo.
+- Formulario de contacto con validación y confirmación de envío simulado.
+- Diseño responsive con enfoque Mobile First.
+- Navegación con HTML semántico, etiquetas asociadas y textos alternativos.
 
-## Productos
+## Tecnologías
 
-La colección incluye muebles para distintos ambientes del hogar y espacios de trabajo:
+- HTML5
+- CSS3, Flexbox y CSS Grid
+- JavaScript
+- `localStorage`
 
-- Asientos: butacas, sillas y sillones.
-- Living: sofás y piezas de descanso.
-- Mesas: mesas de centro, mesas de comedor y mesas de noche.
-- Guardado: aparadores y bibliotecas.
-- Escritorio: escritorios y sillas de trabajo.
-
-Cada producto cuenta con una ficha propia para conocer sus materiales, medidas, acabados, capacidad y otras especificaciones antes de consultar o agregarlo al carrito.
-
-## Tecnologías utilizadas
-
-- HTML5 para la estructura de las páginas.
-- CSS3 para los estilos, la identidad visual y la adaptación a diferentes pantallas.
-- JavaScript para el catálogo, la búsqueda, el carrito y la validación del formulario.
-- `localStorage` para conservar el carrito durante la navegación.
-
-## Estructura del proyecto
+## Estructura
 
 ```text
 Muebleria-Hermanos-Jota/
-├── index.html             # Página de inicio
-├── productos.html         # Catálogo de productos
-├── contacto.html          # Formulario y datos de contacto
-├── estilos.css            # Estilos generales y responsive
-├── productos-data.js      # Datos e información del catálogo
-├── inicio.js              # Productos destacados de la página de inicio
-├── catalogo.js            # Carga, renderizado y búsqueda del catálogo
-├── carrito.js              # Lógica y persistencia del carrito
-├── contacto.js             # Validación y envío simulado del formulario
-└── Kit-de-imágenes-HJota/ # Logos e imágenes de los productos
+├── index.html             # Inicio y productos destacados
+├── productos.html         # Catálogo y buscador
+├── producto.html          # Detalle de producto y carrito lateral
+├── contacto.html          # Formulario de contacto
+├── estilos.css            # Estilos responsive y Mobile First
+├── productos-data.js      # Datos del catálogo
+├── inicio.js              # Renderizado de destacados
+├── catalogo.js            # Carga y búsqueda de productos
+├── carrito.js             # Panel y persistencia del carrito
+├── producto.js            # Renderizado del detalle
+├── contacto.js            # Validación del formulario
+└── Kit-de-imágenes-HJota/ # Logo e imágenes de productos
 ```
 
-## Cómo ejecutar el proyecto
+## Cómo ejecutar
 
-El proyecto es una aplicación frontend estática, por lo que no necesita instalar dependencias ni configurar un servidor backend.
+Es un proyecto estático y no requiere instalación de dependencias ni backend.
 
-1. Clonar o descargar este repositorio.
-2. Abrir la carpeta en Visual Studio Code.
-3. Abrir `index.html` en el navegador.
-
-Para una mejor experiencia de desarrollo se puede utilizar la extensión **Live Server** de Visual Studio Code y abrir el proyecto desde `index.html`.
+1. Abrir la carpeta en Visual Studio Code.
+2. Ejecutar `index.html` con Live Server o abrirlo directamente en el navegador.
 
 ## Estado del proyecto
 
-La interfaz y la lógica principal del sitio están preparadas para presentar el catálogo, consultar productos y administrar un carrito desde el navegador. Los precios incluidos son ilustrativos y el formulario de contacto utiliza un envío simulado, ya que la conexión con un backend o servicio de mensajería queda para una etapa posterior.
+El sitio permite explorar productos, consultar sus detalles y administrar un carrito simulado desde el navegador. El carrito se guarda localmente y el formulario de contacto simula el envío del mensaje. No incluye checkout, pagos ni conexión con un backend.
+
+Los precios del catálogo son demostrativos.
 
 ## Identidad de marca
 
-**Hermanos Jota**
+La interfaz utiliza la paleta de Hermanos Jota, Inter para textos e interfaz y Georgia como tipografía editorial. El logo original se conserva sin deformaciones y se presenta sobre un fondo claro para asegurar su contraste.
 
+**Hermanos Jota**  
 Casa Taller · Av. San Juan 2847  
 Buenos Aires, Argentina
-
-Un espacio dedicado a muebles con historia, materiales honestos y diseño pensado para acompañar la vida cotidiana.
