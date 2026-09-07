@@ -2,6 +2,12 @@
 
 Sitio web frontend para Hermanos Jota, una mueblería de diseño inspirada en la calidez de los materiales nobles, la artesanía y el diseño atemporal.
 
+## Integrantes
+- Ferrada Bruno
+- Fernández Coria Lola
+- Mercado Mara
+- Nuñez Ignacio
+  
 ## Funcionalidades
 
 - Página de inicio con presentación de la marca y productos destacados.
